@@ -34,7 +34,7 @@ openssl genrsa -out pascalcanuel.com.key 2048
 5. Generate a csr 
 
 ```
-openssl req -new -key example.com.key -out example.com.csr
+openssl req -new -key pascalcanuel.com.key -out pascalcanuel.com.csr
 ```
 
 6. Create the +pascalcanuel.com.ext+ config file
