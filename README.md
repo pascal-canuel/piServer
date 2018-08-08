@@ -1,4 +1,4 @@
-# piServer
+# Make your own certificate for development
 
 1. Generate a CA private key
 
@@ -55,4 +55,9 @@ openssl req -new -key pascalcanuel.com.key -out pascalcanuel.com.csr
 ```
  openssl x509 -req -in pascalcanuel.com.csr -CA CA-RootCert.pem -CAkey CA-PrivateKey.key -CAcreateserial -out pascalcanuel.com.crt -days 1825 -sha256 -extfile pascalcanuel.com.ext
  ```
+Links:   
+https://letsencrypt.org/docs/certificates-for-localhost/
 
+# VNC
+
+If you don't want to work directly on your Raspberry Pi, you can remotely control it with VNC https://www.raspberrypi.org/documentation/remote-access/vnc/
