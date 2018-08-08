@@ -12,7 +12,7 @@ openssl genrsa -des3 -out CA-PrivateKey.key 2048
 openssl req -x509 -new -nodes -key CA-PrivateKey.key -sha256 -days 1825 -out CA-RootCert.pem
 ```
 
-3. Install the root certificate. Make sure the file has the +.crt+ extension
+3. Install the root certificate. Make sure the file has the `.crt` extension
 
 ```
 sudo cp CA-RootCert.pem /usr/local/share/ca-certificates/CA-RootCert.crt
@@ -37,7 +37,7 @@ openssl genrsa -out pascalcanuel.com.key 2048
 openssl req -new -key pascalcanuel.com.key -out pascalcanuel.com.csr
 ```
 
-6. Create the +pascalcanuel.com.ext+ config file
+6. Create the `pascalcanuel.com.ext` config file
 
 ```
  authorityKeyIdentifier=keyid,issuer
