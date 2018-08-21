@@ -23,6 +23,9 @@ docker tag image username/repository:tag
 
 # access running container
 docker exec -it <containerID> bash
+
+# if you want to work with your text editor in it 
+docker run --name docker-nginx-new -p 8080:80 -e TERM=xterm -d nginx
 ```
 
 Links   
