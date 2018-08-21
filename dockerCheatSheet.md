@@ -20,6 +20,9 @@ docker container stop <containerID>
 docker rm -f <name>
 
 docker tag image username/repository:tag
+
+# access running container
+docker exec -it <containerID> bash
 ```
 
 Links   
